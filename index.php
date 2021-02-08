@@ -1,5 +1,7 @@
 <?php
-
+require "./classes/Habitation.php";
+require "./classes/Maison.php";
+require "./classes/Appartement.php";
 /**
  * 1. Créez une classe Habitation, elle contiendra les propriétés:
  *    - pays ( string )
@@ -34,3 +36,16 @@
  *
  * 5. Créez une instance de Appartement et invoquez toutes les méthodes définies, y compris les setters ( dans index.php ).
  */
+
+$maison1 = new Maison('France','Anor','59186',3,8,true,2,true);
+$maison2 = new Maison('Belgique','Momignies','6590',1,3,false,1,true);
+
+echo $maison1;
+echo "<br>";
+echo $maison2;
+echo "<br>";
+
+echo "<br>";
+$appart = new Appartement('Japon','Fujieda','426-0025',1,3,false);
+echo $appart;
+echo "<br>";
