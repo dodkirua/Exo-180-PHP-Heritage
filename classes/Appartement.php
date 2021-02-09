@@ -32,9 +32,9 @@ class Appartement extends Habitation
     public function __toString(): String{
         $garage = "";
         if ($this->hasGarage()){
-            $garage = " avec un garage";
+            $garage = " et un garage";
         }
 
-        return "Appartement situé  ".$this->getPays()." dans la ville de ".$this->getVille()." avec le code postal : ".$this->getCp()." avec "." étage(s) ".", ".$this->getChambre()." chambre(s)".$garage;
+        return "Appartement situé  ".$this->getPays()." dans la ville de ".$this->getVille()." avec le code postal : ".$this->getCp()." avec ".$this->getChambre()." chambre(s)".$garage;
     }
 }

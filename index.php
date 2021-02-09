@@ -49,3 +49,11 @@ echo "<br>";
 $appart = new Appartement('Japon','Fujieda','426-0025',1,3,false);
 echo $appart;
 echo "<br>";
+$appart->setChambre(2);
+$appart->setGarage(true);
+$appart->setPiece(6);
+$appart->setPays('Etat-Unis');
+$appart->setVille('Los Angeles');
+$appart->setCp("90001");
+
+echo $appart;
